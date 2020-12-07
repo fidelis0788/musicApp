@@ -1,0 +1,53 @@
+body{
+
+ padding: 50px;
+}
+
+.form-container {
+  max-width: 30%;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.dashboard-container {
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  grid-template-rows: auto;
+  grid-template-areas: 
+    ". header ."
+    ". cards ."
+    ". notifications .";
+}
+
+.welcome-header {
+  margin-top: 15px;
+  grid-area: header;
+  position: relative;
+  margin-left: 19px;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 0;
+  grid-area: cards;
+}
+
+.card {
+  width: 40%;
+  padding: 10px;
+  margin: 25px
+}
+
+.notifications-container {
+  grid-area: notifications;
+  margin-left: 19px;
+  font-weight: bold;
+  
+}
